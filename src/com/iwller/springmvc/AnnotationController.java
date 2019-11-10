@@ -12,8 +12,8 @@ import javax.servlet.http.HttpSession;
 public class AnnotationController {
     @RequestMapping("/method")
     public ModelAndView method(HttpServletRequest httpServletRequest, HttpSession session) throws Exception {
-        System.out.println("AnnotationController.method"+session);
         //回显数据
+        System.out.println("AnnotationController.method"+session);
         ModelAndView mv = new ModelAndView();
         mv.addObject("msg","今天天气好热");
         mv.setViewName("/index.jsp");
